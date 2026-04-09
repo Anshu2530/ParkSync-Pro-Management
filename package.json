@@ -1,0 +1,13 @@
+{
+  "name": "@workspace/parking-system",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "mongodb": "^7.1.1"
+  }
+}

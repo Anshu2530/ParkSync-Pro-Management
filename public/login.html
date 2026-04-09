@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login — ParkSync Pro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/login.css" />
+</head>
+<body>
+  <div class="login-wrapper">
+    <div class="login-split">
+      <!-- Left Branding Area -->
+      <div class="login-brand">
+        <img src="/images/auth-bg.png" alt="Parking" class="login-brand-img" onerror="this.style.opacity=0.1" />
+        <div class="brand-overlay"></div>
+        <div class="login-logo">
+          <div class="logo-circle">P</div>
+          <div>
+            <div class="logo-name">ParkSync Pro</div>
+            <div class="logo-sub">MANAGEMENT SYSTEM</div>
+          </div>
+        </div>
+        <div class="brand-content">
+          <h1>Smart Parking. <br><span class="highlight">Simplified.</span></h1>
+          <p>Secure, real-time tracking and management for your entire parking facility.</p>
+        </div>
+      </div>
+
+      <!-- Right Form Area -->
+      <div class="login-form-area">
+        <div class="login-card">
+          <div class="login-header">
+            <h2 id="form-title">Welcome Back</h2>
+            <p id="form-subtitle">Enter your credentials to access the dashboard</p>
+          </div>
+          
+          <form id="login-form">
+            <div class="form-group">
+              <label class="form-label">Username</label>
+              <div class="input-wrapper">
+                <svg viewBox="0 0 24 24" fill="none" class="input-icon" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                <input type="text" id="username" class="form-input login-input" placeholder="admin" required />
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label class="form-label">Password</label>
+              <div class="input-wrapper">
+                <svg viewBox="0 0 24 24" fill="none" class="input-icon" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                <input type="password" id="password" class="form-input login-input" placeholder="••••••••" required />
+              </div>
+            </div>
+
+            <div id="login-error" class="login-error hidden">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              <span>Invalid username or password</span>
+            </div>
+            
+            <button type="submit" class="btn btn-primary btn-lg login-btn" id="login-submit">
+              Sign In <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </form>
+          
+          <div class="login-footer" style="margin-top: 24px;">
+            <p id="toggle-text"><span>Don't have an account? </span><a href="#" id="toggle-mode" style="color: var(--primary); text-decoration: none; font-weight: 600;">Sign up</a></p>
+            <p style="margin-top: 16px; opacity: 0.5;">Secure System Access • Authorized Personnel</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/login.js"></script>
+</body>
+</html>

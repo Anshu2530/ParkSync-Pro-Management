@@ -1,0 +1,20 @@
+packages:
+  "date-fns": "For formatting and calculating elapsed times"
+  "framer-motion": "For smooth layout transitions and animations"
+  "clsx": "For conditional class merging"
+  "tailwind-merge": "For class merging avoiding conflicts"
+  "react-hook-form": "For robust form state management"
+  "@hookform/resolvers": "For integrating Zod validation with react-hook-form"
+
+images:
+  - path: "artifacts/parking-system/public/images/logo.png"
+    description: "Minimalist geometric parking system logo, letter P, neon teal and electric blue on transparent or very dark background, premium tech startup vibe"
+    aspect_ratio: "1:1"
+  - path: "artifacts/parking-system/public/images/auth-bg.png"
+    description: "Abstract architectural rendering of a modern parking garage at night with neon lights and leading lines, deep slate and cyan tones"
+    aspect_ratio: "16:9"
+
+notes:
+  - Expecting @workspace/api-client-react to properly export the generated React Query hooks and types (useGetDashboardStats, useListParkingSpots, etc.)
+  - Using real-time polling (refetchInterval) for active session tracking and dashboard stats
+  - The UI is designed mobile-first with a dark professional theme
